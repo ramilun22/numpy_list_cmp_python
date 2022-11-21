@@ -18,7 +18,8 @@ if __name__ == '__main__':
     # Realizar una funcion lambda que retorne el tamaño
     # (len) de un string pasado como parámetro
 
-    # len_string = lambda......
+    len_string = lambda tamaño: len(tamaño) 
+    print(len_string('auto'))
 
     # 2)
     # Lista de string
@@ -34,6 +35,7 @@ if __name__ == '__main__':
     # NOTA: No debe usar "len_string" dentro del map, debe colocar
     # directamente la lambda.
 
-    # palabras_len = list(map....)
+    palabras_len = list(map(lambda tamaño: len(tamaño), palabras))
+    print('la nueva lista con los tamaños de cada palabra es:', palabras_len)
 
     print("terminamos")
